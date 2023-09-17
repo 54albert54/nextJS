@@ -2,12 +2,16 @@ const Footer = ():JSX.Element => {
 
 return(         
 <>              
-   <ul>
-    <li>esto </li>
-    <li>es</li>
-    <li>lo que faltava</li>
-    <li>para</li>
-    </ul>             
+   <section className="ul" >
+    <div className="ul-lista"><p>imf relevante</p> </div>
+    <div className="ul-lista"><p>imf relevante</p> </div>
+    <div className="ul-lista"><p>imf relevante</p> </div>
+    <div className="ul-lista"><p>imf relevante</p> </div>
+    <div className="ul-lista"><p>imf relevante</p> </div>
+   
+    </section>  
+
+              
 </>)}           
 
 export default Footer ;

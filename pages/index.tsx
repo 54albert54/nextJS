@@ -1,7 +1,10 @@
+import Navbar from "@/components/Navbar"
 import { TProducts } from "../app/models"
-import Navbar from "../components/Navbar"
 import { useEffect, useState } from "react"
+import Cards from "@/components/Card"
+import imge from "../images/avocados.jpg"
 const Url = "/api/avo/"
+const img = '../aper'
 export default function App() {
   const [products , setProducts] = useState<TProducts[]>([])
 
@@ -13,13 +16,16 @@ export default function App() {
   return (
     <>
 
-    
+<div className='container'>
+
+
     {
       products.map((item, id)=>(
-        <div key={item.id}>{id} a ver {item.name}  </div>
+        <Cards key={item.id} item={item}/> 
+        
       ))
     }
-
+</div>
 
     
     </>

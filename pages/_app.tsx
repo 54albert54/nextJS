@@ -2,6 +2,10 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import App, { AppContext, AppInitialProps, AppProps } from 'next/app'
+import "../app/globals.css"
+import Layout from '@/components/Layout'
+import SideMenu from '@/components/SideMenu'
+
  
 type AppOwnProps = { example: string }
  
@@ -13,8 +17,11 @@ export default function MyApp({
   return (
     <>
     <Navbar/>
-      
+    <div className='main'>
+    <SideMenu clase=''/>
       <Component {...pageProps} />
+      
+      </div>
       <Footer/>
     </>
   )
